@@ -1,8 +1,19 @@
 {
-  "name": "pillwars-bot",
+  "name": "telegram-twitter-bot",
   "version": "1.0.0",
+  "description": "Bot de Telegram para RSS de Twitter y Verificación",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.64.0"
+    "node-telegram-bot-api": "^0.61.0",
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
