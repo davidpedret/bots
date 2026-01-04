@@ -1,7 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api");
 
 const TG_TOKEN = process.env.BOT_TOKEN;
-const GROUP_CHAT_ID = process.env.GROUP_CHAT_ID;
+const GROUP_CHAT_ID = process.env.GROUP_USERNAME;
 
 const X_BEARER = process.env.X_BEARER_TOKEN;
 const X_USERNAME = process.env.X_USERNAME; // sin @
@@ -82,3 +82,4 @@ async function tick() {
 console.log(`Watcher de X iniciado: @${X_USERNAME} | cada ${POLL_SECONDS}s | destino ${GROUP_CHAT_ID}`);
 tick();
 setInterval(tick, POLL_SECONDS * 1000);
+
